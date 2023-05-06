@@ -1,0 +1,29 @@
+import "../styles/AboutContentStyles.css";
+import React from 'react';
+import { Link } from "react-router-dom";
+import React1 from "../assets/react1.jpg";
+import React2 from "../assets/react2.webp";
+
+const AboutContent = () => {
+    return (
+        <div className="about">
+            <div className="left">
+                <h1>Who Am I?</h1>
+                <p>I'm Mohammad Asif Parimoo, a skilled Front End and React Native developer who specializes in creating aesthetically pleasing and high-performance websites and mobile applications. My passion lies in bringing innovative and dynamic ideas to life with my expertise in cutting-edge technologies. I am committed to providing my clients with unique and reliable solutions that meet the highest standards of quality and user experience.</p>
+                <Link to="/contact"><button className="my-btn" onClick={() => window.scrollTo(0, 0)}>CONTACT</button></Link>
+            </div>
+            <div className="right">
+                <div className="image-container">
+                    <div className="img-stack top">
+                        <img src={React1} alt="Image" className="image" />
+                    </div>
+                    <div className="img-stack bottom">
+                        <img src={React2} alt="Image" className="image" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default AboutContent
