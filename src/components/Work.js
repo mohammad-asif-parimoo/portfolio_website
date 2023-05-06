@@ -16,7 +16,7 @@ const Work = () => {
                                 imgSrc={value.imgSrc}
                                 title={value.title}
                                 text={value.text}
-                                viewSource={value.viewSource}
+                                sourceCode={value.sourceCode}
                             />
                         )
                     })

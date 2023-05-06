@@ -15,10 +15,10 @@ const AboutContent = () => {
             <div className="right">
                 <div className="image-container">
                     <div className="img-stack top">
-                        <img src={React1} alt="Image" className="image" />
+                        <img src={React1} alt="Image1" className="image" />
                     </div>
                     <div className="img-stack bottom">
-                        <img src={React2} alt="Image" className="image" />
+                        <img src={React2} alt="Image2" className="image" />
                     </div>
                 </div>
             </div>
