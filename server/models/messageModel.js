@@ -26,7 +26,8 @@ const messageModel = new mongoose.Schema({
     date: {
         type: String,
         default: function () {
-            // Get the current date and time in IST
+            // Set the timezone to 'Asia/Kolkata' (IST)
+            moment.tz.setDefault('Asia/Kolkata');
             const currentDate = moment().format("DD MMMM YYYY, dddd, h:mm A");
             return currentDate;
         }
