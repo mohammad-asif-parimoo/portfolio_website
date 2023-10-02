@@ -2,9 +2,11 @@ const { check } = require('express-validator');
 
 // Validation for name
 const validateName = check('name')
+    .trim() // Removing leading and trailing spaces
+    .isLength({ min: 1 }).withMessage("Name is required")
     .isLength({ min: 3 }).withMessage("Name should be a minimum of 3 characters")
     .isString().withMessage("Only alphabetical characters from a-z or A-Z are valid")
-    .matches(/^[a-zA-Z]+$/).withMessage("Name must contain only alphabetical characters")
+    .matches(/^[a-zA-Z\s]+$/).withMessage("Name must contain only alphabetical characters")
 
 // Validation for email
 const validateEmail = check('email').isEmail().withMessage("Please provide a valid email address");
