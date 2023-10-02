@@ -32,6 +32,9 @@ const Form = () => {
     // API response
     const [response, setResponse] = useState(null);
 
+    // Retry count
+    const [retryCount, setRetryCount] = useState(0);
+
     // Spinner
     const [showSpinner, setShowSpinner] = useState(false);
 
@@ -118,9 +121,11 @@ const Form = () => {
     }, [response]);
 
 
+    // Defining the maximum number of retry attempts
+    const MAX_RETRY_ATTEMPTS = 3;
+
     const sendData = async () => {
         try {
-
             setShowSpinner(true);
             let data = formData;
             let url = "https://portfolio-website-backend-mohammad-asif-parimoo.vercel.app/contact/message";
@@ -133,16 +138,24 @@ const Form = () => {
             });
             const apiResult = await result.json();
             setResponse(apiResult);
-
         } catch (error) {
-            console.log("An error occured while sending the data to the Database", error);
-            setShowErrorAlert(true);
-            setTimeout(() => {
-                window.scrollTo(0, 0);
-            }, 200);
-            setShowSpinner(false);
+            console.log("An error occurred while sending the data to the Database", error);
+
+            // Retrying the sendData function if retryCount is less than MAX_RETRY_ATTEMPTS
+            if (retryCount < MAX_RETRY_ATTEMPTS) {
+                setRetryCount(retryCount + 1);
+                await sendData();
+            }
+            else {
+                // When retryCount reaches MAX_RETRY_ATTEMPTS this will run!
+                setShowErrorAlert(true);
+                setTimeout(() => {
+                    window.scrollTo(0, 0);
+                }, 200);
+                setShowSpinner(false);
+            }
         }
-    }
+    };
 
     const handleSubmit = (event) => {
         event.preventDefault();
