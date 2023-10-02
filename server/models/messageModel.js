@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const moment = require('moment-timezone');
 
 const messageModel = new mongoose.Schema({
 
@@ -23,22 +24,11 @@ const messageModel = new mongoose.Schema({
     },
 
     date: {
-        type: String,  // Changed the type to String for setting custom type of Date
+        type: String,
         default: function () {
-
-            // Format the date in this way e.g., 01 January 1990, Tuesday, 5:00 PM
-            const currentDate = new Date();
-            const options = {
-                year: "numeric",
-                month: "long",
-                day: "numeric",
-                weekday: "long",
-                hour: "numeric",
-                minute: "numeric",
-                second: "numeric",
-                hour12: true
-            };
-            return currentDate.toLocaleString(undefined, options);
+            // Get the current date and time in IST
+            const currentDate = moment().format("DD MMMM YYYY, dddd, h:mm A");
+            return currentDate;
         }
     }
 })
