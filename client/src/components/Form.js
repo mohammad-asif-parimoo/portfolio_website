@@ -139,7 +139,6 @@ const Form = () => {
             const apiResult = await result.json();
             setResponse(apiResult);
         } catch (error) {
-            console.log("An error occurred while sending the data to the Database", error);
 
             // Retrying the sendData function if retryCount is less than MAX_RETRY_ATTEMPTS
             if (retryCount < MAX_RETRY_ATTEMPTS) {
@@ -148,6 +147,7 @@ const Form = () => {
             }
             else {
                 // When retryCount reaches MAX_RETRY_ATTEMPTS this will run!
+                console.log("An error occurred while sending the data to the Database", error);
                 setShowErrorAlert(true);
                 setTimeout(() => {
                     window.scrollTo(0, 0);
