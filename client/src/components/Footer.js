@@ -11,7 +11,7 @@ const Footer = () => {
                     <div className="location">
                         <FaHome size={25} style={{ color: "#fff", marginRight: "2rem" }} />
                         <div>
-                            <p>Lane No. 2A, Gulshan Abad, Zakura, Srinagar, Jammu & Kashmir, 190006, India</p>
+                            <p>Zahid Pora, Hawal, Srinagar, Jammu & Kashmir, 190011, India</p>
                         </div>
                     </div>
                     <div className="phone">
@@ -28,11 +28,11 @@ const Footer = () => {
                         <a href="https://www.instagram.com/mohammad_asif_parimoo/" target="_blank" rel="noopener noreferrer">
                             <FaInstagram size={30} className="instagram-icon" />
                         </a>
-    {/* 
-    <a href="https://github.com/mohammad-asif-parimoo" target="_blank" rel="noopener noreferrer">
-        <FaGithub size={30} className="github-icon" />
-    </a>
-    */}
+    
+                        <a href="https://github.com/mohammad-asif-parimoo" target="_blank" rel="noopener noreferrer">
+                            <FaGithub size={30} className="github-icon" />
+                        </a>
+
 
                         <a href="https://www.facebook.com/mohammadasifparimoo/" target="_blank" rel="noopener noreferrer">
                             <FaFacebook size={30} className="facebook-icon" />
