@@ -29,11 +29,11 @@ const Footer = () => {
                             <FaInstagram size={30} className="instagram-icon" />
                         </a>
     
-                        <!--
-<a href="https://www.facebook.com/mohammadasifparimoo/" target="_blank" rel="noopener noreferrer">
-    <FaFacebook size={30} className="facebook-icon" />
-</a>
--->
+                        {/* 
+    <a href="https://github.com/mohammad-asif-parimoo" target="_blank" rel="noopener noreferrer">
+        <FaGithub size={30} className="github-icon" />
+    </a>
+    */}
 
 
                         <a href="https://www.facebook.com/mohammadasifparimoo/" target="_blank" rel="noopener noreferrer">
