@@ -11,7 +11,7 @@ const HeroImg = () => {
             </div>
             <div className="content">
                 <p>HI, I'M MOHAMMAD ASIF PARIMOO</p>
-                <h1>Full Stack Developer</h1>
+                <h1>DevOps Engineer</h1>
                 <div>
                     <Link to="/projects" className="my-btn" onClick={() => window.scrollTo(0, 0)}>PROJECTS</Link>
                     <Link to="/contact" className="my-btn my-btn-light" onClick={() => window.scrollTo(0, 0)}>CONTACT</Link>
