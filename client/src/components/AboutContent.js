@@ -9,7 +9,7 @@ const AboutContent = () => {
         <div className="about">
             <div className="left">
                 <h1>Who Am I?</h1>
-                <p>I'm Mohammad Asif Parimoo, a skilled Full Stack Developer specializing in crafting aesthetically pleasing and high-performance websites. My passion lies in bringing innovative and dynamic ideas to life, harnessing my expertise in cutting-edge technologies. I am committed to providing my clients with comprehensive and reliable solutions that not only meet but exceed the highest standards of quality and user experience.</p>
+                <p>I'm Mohammad Asif Parimoo, currently working as a DevOps Engineer and previously as a skilled Full Stack Developer specializing in crafting aesthetically pleasing and high-performance websites. My passion lies in bringing innovative and dynamic ideas to life by harnessing my expertise in cutting-edge technologies. I am committed to providing my clients with comprehensive and reliable solutions that not only meet but exceed the highest standards of quality and user experience.</p>
                 <Link to="/contact"><button className="my-btn" onClick={() => window.scrollTo(0, 0)}>CONTACT</button></Link>
             </div>
             <div className="right">
