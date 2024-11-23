@@ -11,7 +11,7 @@ const Footer = () => {
                     <div className="location">
                         <FaHome size={25} style={{ color: "#fff", marginRight: "2rem" }} />
                         <div>
-                            <p>Zahid Pora, Hawal, Srinagar, Jammu & Kashmir, 190011, India</p>
+                            <p>Lane No. 2A, Gulshan Abad, Zakura, Srinagar, Jammu and Kashmir, 190006, India</p>
                         </div>
                     </div>
                     <div className="phone">
@@ -23,7 +23,7 @@ const Footer = () => {
                 </div>
                 <div className="right">
                     <h4 className="text-center">About Me</h4>
-                    <p>I'm Mohammad Asif Parimoo, a skilled Full Stack Developer. I create visually stunning and highly functional websites using cutting-edge technologies. With my expertise in these areas, I aim to bring your ideas to life and provide innovative solutions that meet the highest standards of quality and reliability.</p>
+                    <p>I'm Mohammad Asif Parimoo, currently working as a DevOps Engineer, and previously as a skilled Full Stack Developer. I create visually stunning and highly functional websites using cutting-edge technologies. With my expertise, I aim to bring your ideas to life and provide innovative solutions that meet the highest standards of quality and reliability.</p>
                     <div className="social">
                         <a href="https://www.instagram.com/mohammad_asif_parimoo/" target="_blank" rel="noopener noreferrer">
                             <FaInstagram size={30} className="instagram-icon" />
