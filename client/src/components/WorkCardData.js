@@ -15,7 +15,7 @@ const ProjectCardData = [
     {
         imgSrc: Project2Image,
         title: "Netflix DevOps",
-        text: "Netflix DevOps is a fully automated CI/CD pipeline built to streamline the deployment of a Netflix clone. It integrates Docker for containerization, Jenkins for automation, and SonarQube, Trivy, and OWASP for robust security scanning. Prometheus, Grafana, and Node Exporter power real-time monitoring and observability, ensuring performance and reliability. By enabling secure, scalable, and automated deployments, this project highlights my expertise in modern DevOps practices and cloud-native application management.",
+        text: "Netflix DevOps is a fully automated CI pipeline designed to streamline the build and testing of a Netflix clone. It integrates Docker for containerization, Jenkins for automation, and SonarQube, Trivy, and OWASP for security scanning. Prometheus and Grafana provide monitoring and observability, ensuring system health and performance. This project highlights my expertise in modern DevOps practices and cloud-native development.",
         view: "https://github.com/mohammad-asif-parimoo/netflix_devops.git"
     },
     {
