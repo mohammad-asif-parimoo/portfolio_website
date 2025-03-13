@@ -70,6 +70,50 @@
     background-color: green !important;
 }
 
+.mysql {
+    background-color: #00758f !important; 
+}
+
+.docker {
+    background-color: #2496ed !important;
+}
+
+.jenkins {
+    background-color: #d24939 !important;
+}
+
+.owasp {
+    background-color: #1a5dab !important;
+}
+
+.sonarqube {
+    background-color: #4e8dde !important;
+}
+
+.trivy {
+    background-color: #c21325 !important;
+}
+
+.kubernetes {
+    background-color: #326ce5 !important;
+}
+
+.argocd {
+    background-color: #e00b6a !important;
+}
+
+.prometheus {
+    background-color: #e6522c !important;
+}
+
+.grafana {
+    background-color: #f46800 !important;
+}
+
+.aws-eks {
+    background-color: #ff9900 !important;
+}
+
 @-webkit-keyframes animate-positive {
     0% {
         width: 0%;
