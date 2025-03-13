@@ -11,7 +11,7 @@ const Footer = () => {
                     <div className="location">
                         <FaHome size={25} style={{ color: "#fff", marginRight: "2rem" }} />
                         <div>
-                            <p>Lane No. 2A, Gulshan Abad, Zakura, Srinagar, Jammu and Kashmir, 190006, India</p>
+                            <p>Zahid Pora, Hawal, Srinagar, Jammu & Kashmir, 190011, India</p>
                         </div>
                     </div>
                     <div className="phone">
