@@ -1,11 +1,11 @@
-/* Container Styling */
+/* ====== Container Styling ====== */
 .container {
     width: 60%;
     margin: auto;
     text-align: center;
 }
 
-/* Progress Bar Titles */
+/* ====== Progress Bar Titles ====== */
 .progress-title {
     font-size: 19px;
     font-weight: 700;
@@ -13,7 +13,7 @@
     margin-bottom: 10px;
 }
 
-/* Progress Bar Container */
+/* ====== Progress Bar Container ====== */
 .progress {
     height: 20px;
     border-radius: 20px;
@@ -23,14 +23,14 @@
     overflow: hidden;
 }
 
-/* Progress Fill */
+/* ====== Progress Fill ====== */
 .progress .progress-bar {
     position: relative;
     border-radius: 20px 0 0 20px;
     animation: animate-progress 2s;
 }
 
-/* Progress Value (Text Inside Bar) */
+/* ====== Progress Value (Text Inside Bar) ====== */
 .progress .progress-value {
     display: flex;
     align-items: center;
@@ -41,14 +41,14 @@
     font-weight: bold;
 }
 
-/* Animation */
+/* ====== Animation ====== */
 @keyframes animate-progress {
     0% {
         width: 0%;
     }
 }
 
-/* Skill-Specific Colors */
+/* ====== Skill-Specific Colors ====== */
 .html { background-color: orange !important; }
 .css { background-color: blue !important; }
 .javascript { background-color: rgb(64, 80, 49) !important; }
@@ -70,7 +70,7 @@
 .grafana { background-color: #f46800 !important; }
 .aws_eks { background-color: #ff9900 !important; }
 
-/* Responsive Design */
+/* ====== Responsive Design ====== */
 @media screen and (max-width: 740px) {
     .container {
         width: 100%;
