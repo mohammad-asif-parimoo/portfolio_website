@@ -1,30 +1,36 @@
-.container{
+/* Container Styling */
+.container {
     width: 60%;
+    margin: auto;
+    text-align: center;
 }
 
+/* Progress Bar Titles */
 .progress-title {
     font-size: 19px;
     font-weight: 700;
     color: white;
-    margin: 0 0 10px 0;
+    margin-bottom: 10px;
 }
 
+/* Progress Bar Container */
 .progress {
     height: 20px;
-    line-height: 15px;
     border-radius: 20px;
     background: #f0f0f0;
     margin-bottom: 30px;
-    box-shadow: none;
-    overflow: visible;
+    position: relative;
+    overflow: hidden;
 }
 
+/* Progress Fill */
 .progress .progress-bar {
     position: relative;
     border-radius: 20px 0 0 20px;
-    animation: animate-positive 2s;
+    animation: animate-progress 2s;
 }
 
+/* Progress Value (Text Inside Bar) */
 .progress .progress-value {
     display: flex;
     align-items: center;
@@ -32,58 +38,41 @@
     color: #fff;
     position: absolute;
     right: 8px;
+    font-weight: bold;
 }
 
-.html {
-    background-color: orange !important;
-}
-
-.css {
-    background-color: blue !important;
-}
-
-.javaScript {
-    background-color: rgb(64, 80, 49) !important;
-}
-
-.tailwind-css {
-    background-color: rgb(38, 70, 83) !important;
-}
-
-.bootstrap {
-    background-color: darkmagenta !important;
-}
-
-.react-js {
-    background-color: teal !important;
-}
-
-.express-js {
-    background-color: #808080 !important;
-}
-
-.node-js {
-    background-color: #8CC84B !important;
-}
-
-.mongo-db {
-    background-color: green !important;
-}
-
-@-webkit-keyframes animate-positive {
+/* Animation */
+@keyframes animate-progress {
     0% {
         width: 0%;
     }
 }
 
-@keyframes animate-positive {
-    0% {
-        width: 0%;
-    }
-}
+/* Skill-Specific Colors */
+.html { background-color: orange !important; }
+.css { background-color: blue !important; }
+.javascript { background-color: rgb(64, 80, 49) !important; }
+.tailwind-css { background-color: rgb(38, 70, 83) !important; }
+.bootstrap { background-color: darkmagenta !important; }
+.react-js { background-color: teal !important; }
+.express-js { background-color: #808080 !important; }
+.node-js { background-color: #8CC84B !important; }
+.mongo-db { background-color: green !important; }
+.mysql { background-color: #00758f !important; }
+.docker { background-color: #2496ed !important; }
+.jenkins { background-color: #d24939 !important; }
+.owasp { background-color: #1a5dab !important; }
+.sonarqube { background-color: #4e8dde !important; }
+.trivy { background-color: #c21325 !important; }
+.kubernetes { background-color: #326ce5 !important; }
+.argocd { background-color: #e00b6a !important; }
+.prometheus { background-color: #e6522c !important; }
+.grafana { background-color: #f46800 !important; }
+.aws_eks { background-color: #ff9900 !important; }
 
-@media screen and (max-width:740px) {
-    .container{
+/* Responsive Design */
+@media screen and (max-width: 740px) {
+    .container {
         width: 100%;
     }
 }
