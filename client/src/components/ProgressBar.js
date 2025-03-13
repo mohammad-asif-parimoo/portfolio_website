@@ -14,41 +14,10 @@ const ProgressBar = () => {
             });
         });
 
-        if (progressBarRef.current) {
-            observer.observe(progressBarRef.current);
-        }
+        observer.observe(progressBarRef.current);
 
-        return () => {
-            if (progressBarRef.current) {
-                observer.unobserve(progressBarRef.current);
-            }
-            observer.disconnect();
-        };
+        return () => observer.disconnect();
     }, []);
-
-    // Skill Data Array
-    const skills = [
-        { name: "HTML", percentage: 80, className: "html" },
-        { name: "CSS", percentage: 70, className: "css" },
-        { name: "JavaScript", percentage: 75, className: "javascript" },
-        { name: "Tailwind CSS", percentage: 70, className: "tailwind-css" },
-        { name: "Bootstrap", percentage: 75, className: "bootstrap" },
-        { name: "React JS", percentage: 70, className: "react-js" },
-        { name: "Express JS", percentage: 60, className: "express-js" },
-        { name: "Node JS", percentage: 70, className: "node-js" },
-        { name: "MongoDB", percentage: 75, className: "mongo-db" },
-        { name: "MySQL", percentage: 70, className: "mysql" },
-        { name: "Docker", percentage: 85, className: "docker" },
-        { name: "Jenkins", percentage: 80, className: "jenkins" },
-        { name: "OWASP", percentage: 70, className: "owasp" },
-        { name: "SonarQube", percentage: 75, className: "sonarqube" },
-        { name: "Trivy", percentage: 70, className: "trivy" },
-        { name: "Kubernetes", percentage: 85, className: "kubernetes" },
-        { name: "ArgoCD", percentage: 75, className: "argocd" },
-        { name: "Prometheus", percentage: 80, className: "prometheus" },
-        { name: "Grafana", percentage: 75, className: "grafana" },
-        { name: "AWS/EKS", percentage: 80, className: "aws_eks" }
-    ];
 
     return (
         <div className="container">
@@ -56,21 +25,42 @@ const ProgressBar = () => {
             <div className="row" ref={progressBarRef}>
                 {isVisible && (
                     <div className="col-md-12">
-                        {skills.map((skill, index) => (
-                            <div key={index}>
-                                <h3 className="progress-title">{skill.name}</h3>
-                                <div className="progress">
-                                    <div className={`progress-bar ${skill.className}`} style={{ width: `${skill.percentage}%` }}>
-                                        <div className="progress-value">{skill.percentage}%</div>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
+                        <Skill name="HTML" percentage={80} className="html" />
+                        <Skill name="CSS" percentage={70} className="css" />
+                        <Skill name="JavaScript" percentage={75} className="javascript" />
+                        <Skill name="Tailwind CSS" percentage={70} className="tailwind-css" />
+                        <Skill name="Bootstrap" percentage={75} className="bootstrap" />
+                        <Skill name="React JS" percentage={70} className="react-js" />
+                        <Skill name="Express JS" percentage={60} className="express-js" />
+                        <Skill name="Node JS" percentage={70} className="node-js" />
+                        <Skill name="MongoDB" percentage={75} className="mongo-db" />
+                        <Skill name="MySQL" percentage={70} className="mysql" />
+                        <Skill name="Docker" percentage={85} className="docker" />
+                        <Skill name="Jenkins" percentage={80} className="jenkins" />
+                        <Skill name="OWASP" percentage={70} className="owasp" />
+                        <Skill name="SonarQube" percentage={75} className="sonarqube" />
+                        <Skill name="Trivy" percentage={70} className="trivy" />
+                        <Skill name="Kubernetes" percentage={85} className="kubernetes" />
+                        <Skill name="ArgoCD" percentage={75} className="argocd" />
+                        <Skill name="Prometheus" percentage={80} className="prometheus" />
+                        <Skill name="Grafana" percentage={75} className="grafana" />
+                        <Skill name="AWS/EKS" percentage={80} className="aws_eks" />
                     </div>
                 )}
             </div>
         </div>
     );
 };
+
+const Skill = ({ name, percentage, className }) => (
+    <>
+        <h3 className="progress-title">{name}</h3>
+        <div className="progress">
+            <div className={`progress-bar ${className}`} style={{ width: `${percentage}%` }}>
+                <div className="progress-value">{percentage}%</div>
+            </div>
+        </div>
+    </>
+);
 
 export default ProgressBar;
