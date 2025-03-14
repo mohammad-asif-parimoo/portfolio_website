@@ -17,7 +17,7 @@ const skills = [
     { name: "Git", percentage: 90, className: "git" },
     { name: "Jira", percentage: 85, className: "jira" },
     { name: "Groovy", percentage: 70, className: "groovy" },
-    { name: "Shell Scripting", percentage: 80, className: "shell" },
+    { name: "Shell", percentage: 80, className: "shell" },
     { name: "HTML", percentage: 90, className: "html" },
     { name: "CSS", percentage: 85, className: "css" },
     { name: "JavaScript", percentage: 80, className: "javascript" },
