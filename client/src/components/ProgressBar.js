@@ -24,73 +24,10 @@ const ProgressBar = () => {
             <div className="row" ref={progressBarRef}>
                 {isVisible && (
                     <div className="col-md-12">
-                        <h3 className="progress-title">HTML</h3>
+                        <h3 className="progress-title">Linux</h3>
                         <div className="progress">
-                            <div className="progress-bar html" style={{ width: "80%" }}>
+                            <div className="progress-bar linux" style={{ width: "80%" }}>
                                 <div className="progress-value">80%</div>
-                            </div>
-                        </div>
-
-                        <h3 className="progress-title">CSS</h3>
-                        <div className="progress">
-                            <div className="progress-bar css" style={{ width: "70%" }}>
-                                <div className="progress-value">70%</div>
-                            </div>
-                        </div>
-
-                        <h3 className="progress-title">JavaScript</h3>
-                        <div className="progress">
-                            <div className="progress-bar javascript" style={{ width: "75%" }}>
-                                <div className="progress-value">75%</div>
-                            </div>
-                        </div>
-
-                        <h3 className="progress-title">Tailwind CSS</h3>
-                        <div className="progress">
-                            <div className="progress-bar tailwind-css" style={{ width: "70%" }}>
-                                <div className="progress-value">70%</div>
-                            </div>
-                        </div>
-
-                        <h3 className="progress-title">Bootstrap</h3>
-                        <div className="progress">
-                            <div className="progress-bar bootstrap" style={{ width: "75%" }}>
-                                <div className="progress-value">75%</div>
-                            </div>
-                        </div>
-
-                        <h3 className="progress-title">React JS</h3>
-                        <div className="progress">
-                            <div className="progress-bar react-js" style={{ width: "70%" }}>
-                                <div className="progress-value">70%</div>
-                            </div>
-                        </div>
-
-                        <h3 className="progress-title">Express JS</h3>
-                        <div className="progress">
-                            <div className="progress-bar express-js" style={{ width: "60%" }}>
-                                <div className="progress-value">60%</div>
-                            </div>
-                        </div>
-
-                        <h3 className="progress-title">Node JS</h3>
-                        <div className="progress">
-                            <div className="progress-bar node-js" style={{ width: "70%" }}>
-                                <div className="progress-value">70%</div>
-                            </div>
-                        </div>
-
-                        <h3 className="progress-title">MongoDB</h3>
-                        <div className="progress">
-                            <div className="progress-bar mongo-db" style={{ width: "75%" }}>
-                                <div className="progress-value">75%</div>
-                            </div>
-                        </div>
-
-                        <h3 className="progress-title">MySQL</h3>
-                        <div className="progress">
-                            <div className="progress-bar mysql" style={{ width: "70%" }}>
-                                <div className="progress-value">70%</div>
                             </div>
                         </div>
 
@@ -157,10 +94,17 @@ const ProgressBar = () => {
                             </div>
                         </div>
 
-                        <h3 className="progress-title">AWS / EKS</h3>
+                        <h3 className="progress-title">AWS</h3>
                         <div className="progress">
-                            <div className="progress-bar aws_eks" style={{ width: "80%" }}>
+                            <div className="progress-bar aws" style={{ width: "80%" }}>
                                 <div className="progress-value">80%</div>
+                            </div>
+                        </div>
+
+                        <h3 className="progress-title">GCP</h3>
+                        <div className="progress">
+                            <div className="progress-bar gcp" style={{ width: "75%" }}>
+                                <div className="progress-value">75%</div>
                             </div>
                         </div>
                     </div>
