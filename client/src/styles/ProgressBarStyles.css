@@ -40,60 +40,25 @@
 }
 
 /* Skill-Specific Colors */
-.html {
-    background-color: orange !important;
-}
 
-.css {
-    background-color: blue !important;
-}
-
-.javaScript {
-    background-color: rgb(64, 80, 49) !important;
-}
-
-.tailwind-css {
-    background-color: rgb(38, 70, 83) !important;
-}
-
-.bootstrap {
-    background-color: darkmagenta !important;
-}
-
-.react-js {
-    background-color: teal !important;
-}
-
-.express-js {
-    background-color: #808080 !important;
-}
-
-.node-js {
-    background-color: #8CC84B !important;
-}
-
-.mongo-db {
-    background-color: green !important;
-}
-
-.mysql {
-    background-color: #00758f !important;
+.linux {
+    background-color: #179b1b !important; 
 }
 
 .docker {
-    background-color: #2496ed !important;
+    background-color: #0db7ed !important;
 }
 
 .jenkins {
-    background-color: #d24939 !important;
+    background-color: #d33833 !important;
 }
 
 .owasp {
-    background-color: #1a5dab !important;
+    background-color: #102f66 !important; 
 }
 
 .sonarqube {
-    background-color: #4e8dde !important;
+    background-color: #4e9bee !important; 
 }
 
 .trivy {
@@ -101,24 +66,85 @@
 }
 
 .kubernetes {
-    background-color: #326ce5 !important;
+    background-color: #316ce6 !important; 
 }
 
 .argocd {
-    background-color: #e00b6a !important;
+    background-color: #ef4b6c !important; 
 }
 
 .prometheus {
-    background-color: #e6522c !important;
+    background-color: #e6522c !important; 
 }
 
 .grafana {
-    background-color: #f46800 !important;
+    background-color: #ff9800 !important;
 }
 
-.aws_eks {
+.aws {
     background-color: #ff9900 !important;
 }
+
+.gcp {
+    background-color: #4285f4 !important; 
+}
+
+.git {
+    background-color: #f34f29 !important;
+}
+
+.jira {
+    background-color: #0052cc !important;
+}
+
+.groovy {
+    background-color: #673ab7 !important; 
+}
+
+.shell {
+    background-color: #2c3e50 !important;
+}
+
+.html {
+    background-color: #e34f26 !important; 
+}
+
+.css {
+    background-color: #264de4 !important;
+}
+
+.javascript {
+    background-color: #f7df1e !important; 
+}
+
+.tailwind-css {
+    background-color: #38b2ac !important; 
+}
+
+.bootstrap {
+    background-color: #7952b3 !important; 
+}
+
+.react-js {
+    background-color: #61dafb !important; 
+}
+
+.express-js {
+    background-color: #404040 !important;
+}
+
+.node-js {
+    background-color: #68a063 !important; 
+}
+
+.mongo-db {
+    background-color: #4db33d !important; 
+}
+
+.mysql {
+    background-color: #00758f !important; 
+}
+
 
 /* Animation */
 @-webkit-keyframes animate-positive {
