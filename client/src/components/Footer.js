@@ -1,6 +1,6 @@
 import React from 'react';
 import "../styles/FooterStyles.css";
-import { FaHome, FaPhone, FaMailBulk, FaFacebook, FaInstagram, FaGithub, FaTwitter } from "react-icons/fa";
+import { FaHome, FaPhone, FaMailBulk, FaFacebook, FaInstagram, FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
     return (
@@ -25,6 +25,11 @@ const Footer = () => {
                     <h4 className="text-center">About Me</h4>
                     <p>I'm Mohammad Asif Parimoo, currently working as a DevOps Engineer and previously as a skilled Full Stack Developer. I design and optimize scalable, resilient, and secure infrastructure using cutting-edge technologies. With my expertise in automation, CI/CD, and cloud-native solutions, I bridge the gap between development and operations, ensuring seamless deployments and system reliability while delivering innovative solutions that meet the highest standards of performance and efficiency.</p>
                     <div className="social">
+
+                        <a href="https://www.linkedin.com/in/mohammad-asif-parimoo/" target="_blank" rel="noopener noreferrer">
+                            <FaLinkedin size={30} className="linkedin-icon" />
+                        </a>
+    
                         <a href="https://www.instagram.com/mohammad_asif_parimoo/" target="_blank" rel="noopener noreferrer">
                             <FaInstagram size={30} className="instagram-icon" />
                         </a>
