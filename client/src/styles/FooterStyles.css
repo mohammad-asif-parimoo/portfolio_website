@@ -43,6 +43,15 @@
     margin: 1.5rem auto;
 }
 
+.linkedin-icon {
+    color: #fff;
+    margin-right: 1rem;
+}
+
+.linkedin-icon:hover {
+    color: #0077B5;
+}
+
 .instagram-icon {
     color: #fff;
     margin-right: 1rem;
