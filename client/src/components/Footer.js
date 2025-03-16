@@ -1,6 +1,7 @@
 import React from 'react';
 import "../styles/FooterStyles.css";
-import { FaHome, FaPhone, FaMailBulk, FaFacebook, FaInstagram, FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
+import { FaHome, FaPhone, FaMailBulk, FaFacebook, FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
     return (
@@ -43,7 +44,7 @@ const Footer = () => {
                         </a>
     
                         <a href="https://twitter.com/Mohammad_Asif__" target="_blank" rel="noopener noreferrer">
-                            <FaTwitter size={30} className="twitter-icon" />
+                            <FaXTwitter size={30} className="x-twitter-icon" />
                         </a>
                     </div>
                 </div>
