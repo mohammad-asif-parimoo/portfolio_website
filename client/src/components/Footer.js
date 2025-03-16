@@ -43,7 +43,7 @@ const Footer = () => {
                             <FaFacebook size={30} className="facebook-icon" />
                         </a>
     
-                        <a href="https://twitter.com/Mohammad_Asif__" target="_blank" rel="noopener noreferrer">
+                        <a href="https://x.com/Mohammad_Asif__" target="_blank" rel="noopener noreferrer">
                             <FaXTwitter size={30} className="x-twitter-icon" />
                         </a>
                     </div>
