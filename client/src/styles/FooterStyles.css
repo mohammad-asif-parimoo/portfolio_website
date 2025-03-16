@@ -79,13 +79,13 @@
     color: #1877F2;
 }
 
-.twitter-icon {
+.x-twitter-icon {
     color: #fff;
     margin-right: 1rem;
 }
 
-.twitter-icon:hover {
-    color: #1DA1F2;
+.x-twitter-icon:hover {
+    color: #000;
 }
 
 h4 {
